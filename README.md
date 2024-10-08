@@ -1,10 +1,13 @@
 # MONTE CARLO CONTROL ALGORITHM
 
 ## AIM
-To implement Monte Carlo Control to learn an optimal policy in a grid environment and evaluate its performance in terms of goal-reaching probability and average return.
+To implement Monte Carlo Control to learn an optimal policy in a grid environment and evaluate its performance in terms of 
+goal-reaching probability and average return.
 
 ## PROBLEM STATEMENT
-The task involves solving a Markov Decision Process (MDP) using Monte Carlo Control. The environment is likely a grid world where an agent must navigate through states to reach a goal while maximizing returns. The goal is to compute an optimal policy that achieves the highest probability of success (reaching the goal) and maximizes the average undiscounted return.
+The task involves solving a Markov Decision Process (MDP) using Monte Carlo Control. 
+The environment is likely a grid world where an agent must navigate through states to reach a goal while maximizing returns. 
+The goal is to compute an optimal policy that achieves the highest probability of success (reaching the goal) and maximizes the average undiscounted return.
 
 ## MONTE CARLO CONTROL ALGORITHM
 
@@ -12,11 +15,12 @@ The task involves solving a Markov Decision Process (MDP) using Monte Carlo Cont
 
 2. Generate episodes: Simulate episodes in the environment using the current policy.
 
-3. Update action-value function Q(s,a): For each state-action pair encountered in the episode, update the expected return based on the actual rewards received during the episode.
+3. Update action-value function Q(s,a): For each state-action pair encountered in the episode,
+   update the expected return based on the actual rewards received during the episode.
 
-4. Policy improvement: Update the policy greedily based on the updated action-value estimates.
+5. Policy improvement: Update the policy greedily based on the updated action-value estimates.
 
-5. Repeat the process until convergence.
+6. Repeat the process until convergence.
 
 ## MONTE CARLO CONTROL FUNCTION
 ```python
@@ -64,4 +68,5 @@ def mc_control (env, gamma = 1.0,
 ![image](https://github.com/user-attachments/assets/4331c84b-63aa-450b-8820-bc7b7b526e9f)
 
 ## RESULT:
-Thus to implement Monte Carlo Control to learn an optimal policy in a grid environment and evaluate its performance in terms of goal-reaching probability and average return is executed successfully.
+Thus to implement Monte Carlo Control to learn an optimal policy in a grid environment and evaluate its performance in terms of 
+goal-reaching probability and average return is executed successfully.
